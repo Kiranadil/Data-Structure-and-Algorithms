@@ -3,7 +3,7 @@
  if I pass the names of cats and rabbits to it, it prints ‘pet
  animals’. However, if I pass any other name to it, it says ‘unknown’ */
 
-let animal = "rabbits";
+let animal = "cats";
 switch (animal) {
     case "lion":
     case "leopard":
