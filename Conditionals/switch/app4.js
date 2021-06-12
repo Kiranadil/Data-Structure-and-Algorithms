@@ -10,4 +10,4 @@ switch (number % 2) {
     case 1:
         console.log("Odd number");
 }
-//no need of default case as there are only two possibilities(0 and 1)
+//no need of default case as there are only two possibilities (0 and 1).
