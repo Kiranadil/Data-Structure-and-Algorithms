@@ -8,7 +8,7 @@
 - Node.js(as a runtime environment)
 
 ## Software needed to run this app
--Node.js v14.17.0
+- Node.js v14.17.0
 - VSCode (as an editor)
 - Browser (preferably Chrome)
 
