@@ -1,17 +1,22 @@
-/*You are given an array of pet animals like 
-[‘cat’, ‘rabbit’, ‘pigeon’, ‘parrot’, ‘goldfish’].
-You need to loop over it and then if you encounter
-the name of rabbit, print out ‘this is rabbit’.
-When you don’t get the name of a rabbit, print 
-‘this is not a rabbit’.
-*/
-let petAnimals = ["cat", "rabbit", "pigeon", "parrot", "goldfish"];
-for (let i = 0; i < petAnimals.length; i++) {
-    if (petAnimals[i] == "rabbit") {
-        console.log("This is rabbit");
+/*Suppose you are given an array: 
+[1, 8, 7, 3, 2, 9, 10, 12]. You need to
+find out whether a number is prime or not */
+
+let numberArray = [1, 8, 7, 3, 2, 9, 10, 12];
+for (let i = 0; i < numberArray.length; i++) {
+    let isPrime = true;
+
+    for (let j = 2; i > j; j++) {
+
+        if (i % j == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
+        console.log(numberArray[i] + " is a prime number");
     }
     else {
-        console.log("This is not a rabbit");
+        console.log(numberArray[i] + " is not a prime number");
     }
-
 }
