@@ -3,14 +3,11 @@
 find out whether a number is prime or not */
 
 let numberArray = [1, 8, 7, 3, 2, 9, 10, 12];
-for (let i = 0; i < numberArray.length; i++) {
-    let isPrime = true;
-
-    for (let j = 2; i > j; j++) {
-
-        if (i % j == 0) {
-            isPrime = false;
-            break;
+let isPrime = false;
+for (i = 0; i < numberArray.length; i++) {
+    for (let j = 0; j < i; j++) {
+        if (numberArray[i] % j == 0) {
+            isPrime = true;
         }
     }
     if (isPrime) {
